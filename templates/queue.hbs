@@ -1,0 +1,20 @@
+<div class="echo-hq-app">
+  {{#if requests.length}}
+    <div class="echo-hq-list">
+      {{#each requests}}
+        <div class="echo-hq-card echo-hq-status-{{status}}" title="{{statusLabel}} — {{actorName}} ({{userName}})">
+          <div class="echo-hq-color-line"></div>
+          <img class="echo-hq-avatar" src="{{img}}" alt="{{actorName}}" />
+          <div class="echo-hq-info">
+            <div class="echo-hq-actor">{{actorName}}</div>
+            <div class="echo-hq-status-label">{{statusLabel}}</div>
+            <div class="echo-hq-user">Игрок: {{userName}}</div>
+          </div>
+          <button type="button" class="echo-hq-clear" data-user-id="{{userId}}" title="Убрать эту заявку">×</button>
+        </div>
+      {{/each}}
+    </div>
+  {{else}}
+    <div class="echo-hq-empty">Заявок нет.</div>
+  {{/if}}
+</div>

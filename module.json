@@ -1,0 +1,22 @@
+{
+  "id": "echo-hand-queue",
+  "title": "Echo Hand Queue",
+  "description": "Кнопка поднятой руки на левой панели Foundry VTT: игроки отправляют заявки Мастеру, а ГМ видит цветную очередь с портретами персонажей.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "Echo / ChatGPT"
+    }
+  ],
+  "esmodules": [
+    "scripts/echo-hand-queue.js"
+  ],
+  "styles": [
+    "styles/echo-hand-queue.css"
+  ],
+  "socket": true
+}
